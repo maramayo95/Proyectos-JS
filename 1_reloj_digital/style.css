@@ -12,8 +12,11 @@ body {
 }
 
 .wrap {
-    width: 90%;
-    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    
+   /*  width: 90%;
+    max-width: 1000px; */
  /*    margin: auto; */
 }
 
