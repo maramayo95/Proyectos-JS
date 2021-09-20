@@ -1,0 +1,84 @@
+* {
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+}
+
+body {
+ margin: 0;
+ background-image:url(./img/pexels-cottonbro-5185093.jpg);
+ background-size: cover;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.calculadora {
+    display: grid;
+    grid-template-columns: repeat(4,75px);
+    grid-template-rows: 160px repeat(5, 75px);
+    background-color: #303030ec;
+    padding: 15px;
+    border-radius: 32px;
+    box-shadow:15px 10px 0px 5px #00000033 ;
+    
+}
+
+button {
+    cursor: pointer;
+    margin: 5px;
+    padding:0;
+    border-radius: 32px;
+    font-size: 1.5em;
+    border: none;
+    background-color: rgb(54, 54, 54);
+    box-shadow: 5px 5px 10px -3px #000000;
+}
+
+button:active {
+    background-color: rgb(26, 26, 26);
+}
+
+button:focus {
+    outline:none;
+}
+
+.display {
+    grid-column: 1 / -1;
+    padding: 16px;
+    display: flex;
+    margin: 10px 10px 20px;
+    background-color: rgba(7, 7, 7, 0.747);
+    border-radius: 32px;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align:right;
+    justify-content: space-between;
+    word-break: break-all;
+    box-shadow: 0px 0px 0px 10px rgba(27, 27, 27, 0.884) ;
+}
+
+.col-2 {
+    grid-column: span 2;
+   
+}
+
+.borrar {
+    background-color: #FF000066;
+}
+
+.borrar:active {
+ background-color: #FF000095;
+}
+
+#valor-actual {
+    font-size: 1.5em;
+}
+
+#valor-anterior {
+    font-size: 2em;
+}
