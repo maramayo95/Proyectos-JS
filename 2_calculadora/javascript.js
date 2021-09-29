@@ -5,4 +5,9 @@ const botonesOperadores = document.querySelectorAll('.operador');
 
 const calculadora = new Calculadora();
 
-console.log(calculadora.sumar(2,3));
+const display = new Display(displayValorAnterior,displayValorActual);
+
+botonesNumeros.forEach(boton => {
+    boton.addEventListener('click', () =>  display.agregarNumero(boton.innerHTML)) ;
+    
+})
