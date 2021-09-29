@@ -1,0 +1,56 @@
+* {
+    font-family: 'Orbitron', sans-serif;
+}
+body {
+    background-image: url("./img/pexels-tima-miroshnichenko-5380664.jpg");
+    background-size: cover; 
+}
+
+.boton-centro {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+#password {
+    padding: 20px;
+    margin-top: 40vh;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    border-radius: 10px;
+    position:relative;
+    color: white;
+    background-color: #0a0808de ;
+}
+
+#password:hover {
+    color: rgba(255, 255, 255, 1) !important;
+    box-shadow: 0 5px 16px rgb(48, 180, 30);
+    transition: all 0.2s ease;
+}
+
+.print {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+#password-print {
+    
+    width: 200px;
+    background-color: black;
+    color: white;
+    text-align:center;
+    padding: 20px;
+    border-radius: 10px;
+    
+    
+    
+    
+}
+
+#password-print:hover {
+    color: rgba(255, 255, 255, 1) !important;
+    box-shadow: 0 5px 16px rgb(48, 180, 30);
+    transition: all 0.2s ease;
+}
