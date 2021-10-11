@@ -4,14 +4,12 @@ let div  = document.querySelector('#password-print');
 div.style.display = "none";
 
 function generarPass() {
-   
- const randomPass =   (new Date()).getTime().toString(36) + Math.random().toString(36).slice(2);
- console.log(randomPass);
 
- div.innerHTML = `<p>${randomPass}</p>`
+    const randomPass =   (new Date()).getTime().toString(36) + Math.random().toString(36).slice(2);
 
- div.style.display = "block";
- 
+    div.innerHTML = `<p>${randomPass}</p>`
+
+    div.style.display = "block";
     
 }
 
